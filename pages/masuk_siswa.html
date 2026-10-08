@@ -121,30 +121,47 @@
         btn.classList.add('opacity-75');
 
         try {
-          const response = await fetch('https://tugasmurid-api.englishstudymts2.workers.dev/api/login', {
-            method: 'POST',
+          // PERINGATAN: Menyimpan Token GitHub di Frontend sangat berbahaya.
+          const GITHUB_TOKEN = "ghp_TokenRahasiaKamuDiSini"; 
+          const REPO = "englishstudymts2/tugasmurid-database"; // Sesuaikan dengan namamu
+
+          // Contoh mengambil file berisi data murid (students.json)
+          const response = await fetch(`https://api.github.com/repos/${REPO}/contents/users/students.json`, {
+            method: 'GET',
             headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ username: nis, password: pass })
+              'Authorization': `Bearer ${GITHUB_TOKEN}`,
+              'Accept': 'application/vnd.github.v3+json'
+            }
           });
 
-          const data = await response.json();
+          if (!response.ok) {
+            throw new Error("Gagal terhubung ke database GitHub");
+          }
 
-          if (response.ok && data.success) {
+          const data = await response.json();
+          // Decode file JSON dari Base64
+          const studentsJson = decodeURIComponent(escape(atob(data.content)));
+          const students = JSON.parse(studentsJson);
+
+          // Cari siswa dengan NIS yang sesuai
+          const student = students.find(s => s.nis === nis);
+
+          if (student && student.password === pass) { // Pastikan di dunia nyata tidak membandingkan plain text jika bisa
             feedback.querySelector('p').textContent = 'Koneksi aman terhubung. Menyiapkan dashboard tugas...';
-            // Simpan token untuk pemanggilan API selanjutnya
-            localStorage.setItem('auth_token', data.token);
+            // Simpan info sesi lokal
+            localStorage.setItem('auth_nis', nis);
+            localStorage.setItem('auth_role', 'student');
             // Redirect ke halaman beranda murid
             window.location.href = 'beranda_murid.html';
           } else {
-            feedback.querySelector('p').textContent = data.message || 'Login gagal, periksa kembali NIS dan Sandi.';
+            feedback.querySelector('p').textContent = 'Login gagal, periksa kembali NIS dan Sandi.';
             feedback.querySelector('p').classList.add('text-error');
             btn.disabled = false;
             btn.classList.remove('opacity-75');
           }
         } catch (error) {
-          feedback.querySelector('p').textContent = 'Terjadi kesalahan jaringan. Coba lagi.';
+          console.error(error);
+          feedback.querySelector('p').textContent = 'Terjadi kesalahan jaringan atau database. Coba lagi.';
           feedback.querySelector('p').classList.add('text-error');
           btn.disabled = false;
           btn.classList.remove('opacity-75');
