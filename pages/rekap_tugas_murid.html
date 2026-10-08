@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ba1a1a", "surface-container-high": "#e2eae5", "on-error": "#ffffff", "secondary-fixed": "#d6e3ff", "error-container": "#ffdad6", "secondary-container": "#73a9fe", "tertiary-fixed-dim": "#b0ceb3", "tertiary-container": "#5d7860", "on-primary-container": "#e1ffe5", "outline": "#717971", "surface": "#f3fbf6", "on-tertiary-container": "#e2ffe3", "background": "#f3fbf6", "on-error-container": "#93000a", "secondary-fixed-dim": "#a9c7ff", "primary-fixed-dim": "#9dd3aa", "on-secondary-container": "#003d7a", "on-tertiary-fixed": "#07200f", "surface-container-low": "#edf6f1", "on-primary-fixed-variant": "#1e5031", "on-primary-fixed": "#00210e", "on-secondary": "#ffffff", "on-tertiary": "#ffffff", "inverse-primary": "#9dd3aa", "inverse-on-surface": "#eaf3ee", "surface-bright": "#f3fbf6", "inverse-surface": "#2a322f", "surface-dim": "#d3dcd7", "surface-container-highest": "#dce4e0", "on-secondary-fixed": "#001b3d", "outline-variant": "#c1c9bf", "primary-fixed": "#b9efc5", "tertiary": "#455f49", "on-primary": "#ffffff", "on-surface-variant": "#414942", "surface-container": "#e7f0eb", "surface-tint": "#376847", "secondary": "#1b5eae", "on-secondary-fixed-variant": "#00468b", "on-background": "#151d1a", "primary-container": "#4a7c59", "surface-variant": "#dce4e0", "tertiary-fixed": "#cceace", "surface-container-lowest": "#ffffff", "on-surface": "#151d1a", "primary": "#316342", "on-tertiary-fixed-variant": "#334d38" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "gutter-sm": "1rem", "margin": "2rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-md": "1rem", "margin-mobile": "1rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-low"><img alt="Logo TugasMurid" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj_UfYWei5owSESLOnFwXx5gs6yE26isd46-4g1j7Wr2C7a3QWvnD5J3p3zoAU6vBczi9F5hAfnG4hk9gJH03PXwmzu3CClGthtMjvgomjueNTmi9x_y_g5qjNhKl2aq6QRCwjxx_xPJnMs9O1XTJw5JAm1yFXMAcqec89UtH17R-3kaVcyJF8vVmGjxzTHeUGXYX1E-DS_fENEPHe_f-SPfuGp_vBxYqrt9Vwm20"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-tight">TugasMurid</span><span class="font-label-sm text-label-sm text-on-surface-variant">Portal Guru &amp; Admin</span></div></div><div class="px-space-md py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-all bg-primary-container text-on-primary-container font-semibold shadow-sm" data-path="rekap-tugas-murid" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Rekap Tugas Murid</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="penilaian" href="#"><span class="material-symbols-outlined text-[20px]">rate_review</span><span>Penilaian</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="data-master" href="#"><span class="material-symbols-outlined text-[20px]">dataset</span><span>Data Master</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="laporan-dan-ekspor" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Laporan &amp; Ekspor</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="pengaturan-dan-cadangan" href="#"><span class="material-symbols-outlined text-[20px]">settings_backup_restore</span><span>Pengaturan &amp; Cadangan</span></a></nav></div></div><div class="p-space-md m-space-md rounded-xl bg-surface-container"><div class="flex items-center gap-space-xs text-primary mb-1"><span class="material-symbols-outlined text-[16px]">verified_user</span><span class="font-label-sm text-label-sm text-primary">Sistem Aktif</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">RPD v1.4 Engine Operasional Mandiri Guru</p></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full h-10 pl-9 pr-space-md bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm rounded-lg outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Cari siswa, kelas, kode tugas..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low"><span class="inline-block w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Database: GitHub Repo Privat (Aman)</span></div><div class="hidden md:flex items-center px-space-sm py-1 rounded-full bg-surface-container-low"><span class="font-label-sm text-label-sm text-on-surface-variant">T.A. 2026/2027</span></div><button aria-label="Notifikasi Tugas Baru" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Bu Nurul Farida</span><div class="flex justify-end mt-0.5"><span class="px-1.5 py-0.2 rounded font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed leading-none">Admin Tunggal</span></div></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCei862ALKz2J8XyxqJvNar3jpJZAgoWlMR4O07csFBdPbSWyVPD5kyklMKPyWvR3FjBouhIo55WTyOnpe3c120I7gbj2Qnw8AVDKL9H7wcjzPY6KRLeMi4gChzERVjDBsC0J3qvWOQvemP5Lf6N1nLuFoqkNXJoF0s4JHaHnGPYwVBEfyXNcbzQUhnSK0-r2zJ0VYA_Yivn7-OszlkqCXJYeFpSinGJr8ee5cHW-c"/></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<div class="px-space-lg py-space-xl max-w-[1400px] w-full mx-auto flex flex-col gap-space-lg">
+<!-- Header Section with Quick Stats Bento -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wider">Modul 5.2.D • RPD v1.4</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">• Terakhir diselaraskan: Baru saja</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Rekap Pengumpulan Tugas Murid</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Pantau status penyerahan dan kelola kiriman seluruh kelas secara terstruktur, tenang, dan terpusat.</p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="inline-flex items-center gap-space-xs px-4 h-11 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Filter Lanjutan</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-4 h-11 rounded-lg bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Ekspor Rekap (CSV/Excel)</span>
+</button>
+</div>
+</div>
+<!-- Metric Spark Counters -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Total Terkumpul</span>
+<span class="material-symbols-outlined text-primary text-[18px]">task_alt</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface">29</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 32 siswa</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 90.6%"></div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Menunggu Dinilai</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">schedule</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface">8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">berkas antrean</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-2 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 28%"></div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Sudah Dinilai</span>
+<span class="material-symbols-outlined text-primary-container text-[18px]">verified</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface">19</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">rata-rata: 88.4</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-2 overflow-hidden">
+<div class="bg-primary-fixed-dim h-full rounded-full" style="width: 65%"></div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Belum / Terlambat</span>
+<span class="material-symbols-outlined text-error text-[18px]">error_outline</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-error">3</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">perlu tindak lanjut</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-2 overflow-hidden">
+<div class="bg-error-container h-full rounded-full" style="width: 9.4%"></div>
+</div>
+</div>
+</div>
+<!-- Filter Console -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-space-sm items-center">
+<!-- Search bar -->
+<div class="lg:col-span-4 relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full h-11 pl-10 pr-space-md bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm rounded-lg outline-none focus:bg-surface-container-lowest transition-all" id="searchInput" placeholder="Cari nama siswa atau NIS..." type="text"/>
+</div>
+<!-- Filter Kelas -->
+<div class="lg:col-span-2 relative">
+<select class="w-full h-11 px-3 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg outline-none appearance-none cursor-pointer focus:bg-surface-container-lowest transition-all">
+<option value="all">Semua Kelas</option>
+<option value="VII-A">VII-A</option>
+<option value="VII-B">VII-B</option>
+<option selected="" value="VIII-A">VIII-A (Aktif)</option>
+<option value="VIII-B">VIII-B</option>
+<option value="IX-A">IX-A</option>
+<option value="IX-B">IX-B</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Filter Tugas -->
+<div class="lg:col-span-3 relative">
+<select class="w-full h-11 px-3 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg outline-none appearance-none cursor-pointer focus:bg-surface-container-lowest transition-all">
+<option selected="" value="t4">Tugas 4: Rangkuman Fotosintesis</option>
+<option value="t3">Tugas 3: Laporan Sel Tumbuhan</option>
+<option value="t2">Tugas 2: Klasifikasi Makhluk Hidup</option>
+<option value="t1">Tugas 1: Pengenalan Mikroskop</option>
+<option value="all">Semua Penugasan</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Filter Status -->
+<div class="lg:col-span-3 relative">
+<select class="w-full h-11 px-3 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg outline-none appearance-none cursor-pointer focus:bg-surface-container-lowest transition-all">
+<option selected="" value="all">Status: Semua Status</option>
+<option value="terkirim">Terkirim</option>
+<option value="menunggu">Menunggu Dinilai</option>
+<option value="dinilai">Dinilai</option>
+<option value="belum">Belum Mengumpulkan</option>
+<option value="terlambat">Terlambat</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Quick Filter Pills -->
+<div class="flex items-center justify-between pt-1 flex-wrap gap-2">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">Pintasan:</span>
+<button class="px-2.5 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm transition-colors" type="button">Semua (32)</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors" type="button">Perlu Diperiksa (8)</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors" type="button">Terlambat (2)</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors" type="button">Belum Kumpul (1)</button>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span>Batas Waktu: <strong class="text-on-surface font-medium">18 Okt 2026, 23:59 WIB</strong></span>
+</div>
+</div>
+</div>
+<!-- Floating Batch Selection Bar (RPD 6.3) -->
+<div class="sticky top-20 z-30 transition-all duration-300 ease-in-out bg-inverse-surface text-inverse-on-surface rounded-xl px-space-md py-3 shadow-xl flex items-center justify-between gap-space-md flex-wrap" id="batchActionBar">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-on-primary font-label-sm text-label-sm">
+<span id="selectedCountBadge">3</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md leading-tight text-surface-bright"><span id="selectedCountText">3</span> murid dipilih</span>
+<span class="font-body-sm text-body-sm text-surface-variant">Tindakan massal akan diterapkan pada seluruh kiriman terpilih</span>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-wrap">
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-surface-bright font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>Buka Kembali Kiriman</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">fact_check</span>
+<span>Beri Nilai Massal</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-surface-bright font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Kirim Pengingat</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-surface-bright font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Ekspor Terpilih</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-highest/30 text-surface-variant hover:text-surface-bright transition-colors" id="clearSelectionBtn" title="Batalkan pilihan" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Main Data Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<th class="py-3.5 px-4 w-12 text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" id="selectAllCheckbox" type="checkbox"/>
+</th>
+<th class="py-3.5 px-4 min-w-[200px]">NIS &amp; Nama Murid</th>
+<th class="py-3.5 px-3 min-w-[90px]">Kelas</th>
+<th class="py-3.5 px-4 min-w-[200px]">Penugasan</th>
+<th class="py-3.5 px-4 min-w-[170px]">Tanggal &amp; Waktu Kirim</th>
+<th class="py-3.5 px-4 min-w-[190px]">Lampiran Berkas</th>
+<th class="py-3.5 px-4 min-w-[160px]">Status Tugas</th>
+<th class="py-3.5 px-4 text-right min-w-[140px]">Aksi Cepat</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1 (Selected, Menunggu Dinilai) -->
+<tr class="bg-surface-container/30 hover:bg-surface-container-low transition-colors group">
+<td class="py-4 px-4 text-center">
+<input checked="" class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-title-md text-title-md flex-shrink-0">
+                    A
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Ahmad Rizky Pratama</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIS: 202408101</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">VIII-A</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Tugas 4: Rangkuman Fotosintesis</span>
+<span class="text-on-surface-variant text-[11px]">IPA Biologi • Bab 3</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="text-on-surface">18 Okt 2026, 14:22 WIB</span>
+<span class="text-primary text-[11px] font-medium">Tepat Waktu (9 jam awal)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-7 w-7 rounded object-cover ring-2 ring-surface-container-lowest" data-alt="Close-up macro shot of handwritten science notebook pages with neat biological cell diagrams, illuminated by gentle natural classroom light with botanical soft tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmLUk5nZvBQ-WJjruluSw5DwqCRe2ltB4R1iODtLd3iEg79zr-L46ad1tSp8IX94IHMqbr5DvRI3rLwSEndnxVLyNej7nIq1Y_HcEmfmCobNpmVQKYU9E_1pdB59VIBBdhM4ir_KQrgKmLvGFfpJnMKGXiwKcPZL_mtratHtp_qJdaqNciBeRZpeq_bj8B4ma8S0kQIMuohbFNm9BZ36aCV-62a3ErJRo8HOFEFa0"/>
+<img class="inline-block h-7 w-7 rounded object-cover ring-2 ring-surface-container-lowest" data-alt="High angle macro photography of textbook page summary with pencil sketches of photosynthetic light cycle, muted green tint aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_rHOWHq14Ynlp4EEwM3Q8-piDnfsqRUuLKfmfz4AxHyTr7U8pVfsMZlZ_EZeM3rZ3_sAqjyBSiWRGPeCjFn44BzdwYby0z1xtN9Gp-soTifYW_dicutvcn7ZXFphgQhi1ciqIoCLyH8e7rZr6PKy3AsaBk2tZHmCU7whLdfrgBkCCguaf3ZxiAQYL3vQ_Hh5NMhKxC4TB56oFec_7MyfPVDXMK7vCHeajREq9NHU"/>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-surface-container text-on-surface-variant">
+                    3 Gbr • 1.2 MB
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-[#FFF3CD] text-[#856404]">
+<span class="material-symbols-outlined text-[13px]">hourglass_empty</span>
+<span>Menunggu Dinilai</span>
+</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-all shadow-sm" type="button">Periksa</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Opsi lainnya" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 (Selected, Dinilai 95) -->
+<tr class="bg-surface-container/30 hover:bg-surface-container-low transition-colors group">
+<td class="py-4 px-4 text-center">
+<input checked="" class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-title-md text-title-md flex-shrink-0">
+                    B
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Bella Safitri</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIS: 202408102</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">VIII-A</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Tugas 4: Rangkuman Fotosintesis</span>
+<span class="text-on-surface-variant text-[11px]">IPA Biologi • Bab 3</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="text-on-surface">17 Okt 2026, 20:10 WIB</span>
+<span class="text-primary text-[11px] font-medium">Tepat Waktu (H-1)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-7 w-7 rounded object-cover ring-2 ring-surface-container-lowest" data-alt="Clear high quality photo of a student botanical assignment paper showing green chlorophyll formula diagram, soft ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5ED4lbd4LKaO2tPLbvTxmto6mf4HB08OSKQiqDeYhl12FqKYIpBLFbKXRrXzvXSFSSx6hz0aULk8Mo-ltS6dVLAaUDmg-xGoFoZTfxvKr13Qc3pabxJllRQjiJnAHb7PAMUg746ajDFuwzxtCnIdnFY3WXgkJYEcllQ3lg6imhyC5z5OZKRMxAG_yYkbq6uI_FkpfbyP4czPXLztD2kOeldznE0MiW-lLE1cIfSQ"/>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-surface-container text-on-surface-variant">
+                    2 Gbr • 840 KB
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-[#D1E7DD] text-[#155724]">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span>Dinilai: 95</span>
+</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-all" type="button">Lihat Nilai</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Opsi lainnya" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 (Selected, Terlambat) -->
+<tr class="bg-surface-container/30 hover:bg-surface-container-low transition-colors group">
+<td class="py-4 px-4 text-center">
+<input checked="" class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-title-md text-title-md flex-shrink-0">
+                    D
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Dimas Aditya Nugraha</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIS: 202408105</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">VIII-A</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Tugas 4: Rangkuman Fotosintesis</span>
+<span class="text-on-surface-variant text-[11px]">IPA Biologi • Bab 3</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="text-on-surface">19 Okt 2026, 06:15 WIB</span>
+<span class="text-error text-[11px] font-medium">Terlambat +6 jam 15m</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-7 w-7 rounded object-cover ring-2 ring-surface-container-lowest" data-alt="Student science notes photographed on light timber desk with soft morning daylight and pastel green notes marker highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdvgPSantTvljZ2-HOvMkIhS7wjQQIKKBVht90aVV5v44aBSkv7k-itF89x_umdhLnEMJz3KRqYfXOYAR5KtFgOofaod1Y8tpdQjj1jpufagUkMOu7IbZd451Qm0PSdeX0eTyaMjgRI9pPHI-FLyyKlV46_4WwZB5wqcg3uLVqoEHap2PSk5nl3UL8E44FtOU2uSDaQSXcwk2DyFRX73RUHgpFOmHauqU9XlOR0nY"/>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-surface-container text-on-surface-variant">
+                    1 Gbr • 520 KB
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-[#F8D7DA] text-[#721C24]">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+<span>Terlambat</span>
+</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-all shadow-sm" type="button">Periksa</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Opsi lainnya" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 (Unselected, Dinilai 88) -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-title-md text-title-md flex-shrink-0">
+                    F
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Fathir Muhammad Zaidan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIS: 202408107</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">VIII-A</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Tugas 4: Rangkuman Fotosintesis</span>
+<span class="text-on-surface-variant text-[11px]">IPA Biologi • Bab 3</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="text-on-surface">18 Okt 2026, 11:04 WIB</span>
+<span class="text-primary text-[11px] font-medium">Tepat Waktu (H-0)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-7 w-7 rounded object-cover ring-2 ring-surface-container-lowest" data-alt="Student handwritten chart summarizing Calvin cycle and chloroplast organelle, crisp soft lighting, warm sage tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqRHjSjhkn469WTOJBvDqauM1-Iy6TeO-bWrhF5Hd5qPtnEDWG9g_BB_QIQaHzH3PseGpA07REd_yfu-5W559bUWMBm5LzltWkoBDrwf_IacHMa6i_Yx-Lhj5R-Z9A-OmxkYQbeguUlgguYgVH4FT-PP1PMeONqwwzgvHI2jHrjVe4njNO-8EX0Gq2VeWrmmoyW93sbnJM-5IPfjIQdc5hgo5KUnVB3Hmo2brq8ms"/>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-surface-container text-on-surface-variant">
+                    2 Gbr • 910 KB
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-[#D1E7DD] text-[#155724]">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span>Dinilai: 88</span>
+</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-all" type="button">Lihat Nilai</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Opsi lainnya" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 (Unselected, Belum Mengumpulkan) -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-title-md text-title-md flex-shrink-0">
+                    G
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Gita Prameswari</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIS: 202408109</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">VIII-A</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Tugas 4: Rangkuman Fotosintesis</span>
+<span class="text-on-surface-variant text-[11px]">IPA Biologi • Bab 3</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="text-on-surface-variant italic">- Belum Kirim -</span>
+<span class="text-error text-[11px] font-medium">Melewati Batas Akhir</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="text-on-surface-variant font-label-sm text-label-sm italic">Tidak ada lampiran</span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-highest text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">block</span>
+<span>Belum Mengumpulkan</span>
+</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-3 py-1.5 rounded-lg bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim font-label-sm text-label-sm transition-all shadow-sm" type="button">Kirim Colekan</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Opsi lainnya" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6 (Unselected, Menunggu Dinilai) -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-title-md text-title-md flex-shrink-0">
+                    H
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Hendra Wijaya Kusuma</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIS: 202408112</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">VIII-A</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Tugas 4: Rangkuman Fotosintesis</span>
+<span class="text-on-surface-variant text-[11px]">IPA Biologi • Bab 3</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="text-on-surface">18 Okt 2026, 21:40 WIB</span>
+<span class="text-primary text-[11px] font-medium">Tepat Waktu (H-0)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-7 w-7 rounded object-cover ring-2 ring-surface-container-lowest" data-alt="Student homework sheets with organic biological sketches showing microscopic chloroplast view, warm paper stock." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD3Z-Fdcs0xNLfkOnX_KbmsvR9bVMUjqLrNx_RD0kSpaOvbg6EneVUmizAgowM4KcBlV0Med09pdmdv4OLldNP8TO-lYngq3ugRPa2zK_nuvPEm0rcf7hWfC0vQIc3_R0DeKnCoqK3S-2jxcNo_KnDYN8kGZMYa3g02lnNkXKM_vvRWwv7ZpMuhJgRAE0x4vWhzph8By_dNRzX9h3Md_MQmpDUZzOhQMC0-USALeE"/>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-surface-container text-on-surface-variant">
+                    3 Gbr • 1.4 MB
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-[#FFF3CD] text-[#856404]">
+<span class="material-symbols-outlined text-[13px]">hourglass_empty</span>
+<span>Menunggu Dinilai</span>
+</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-all shadow-sm" type="button">Periksa</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Opsi lainnya" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7 (Unselected, Dinilai 92) -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-title-md text-title-md flex-shrink-0">
+                    K
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Keysha Anindya Putri</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIS: 202408115</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">VIII-A</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Tugas 4: Rangkuman Fotosintesis</span>
+<span class="text-on-surface-variant text-[11px]">IPA Biologi • Bab 3</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="text-on-surface">17 Okt 2026, 18:25 WIB</span>
+<span class="text-primary text-[11px] font-medium">Tepat Waktu (H-1)</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-7 w-7 rounded object-cover ring-2 ring-surface-container-lowest" data-alt="Neat student handwriting in school journal summarizing light-dependent biology experiment, warm soft light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAPeZBi_eFuf0w6N-955KHLr06B7J7zEdLyqLFg9oYL3FOStDsVnxHb1haohkzumoTkehOY3tJqbGmoEfxj1uITC7e4Ad38Y84ACqy_3WyR05tttnQ1jGTlKA8Mc48KjjJfLzAzgaSK2M3j7hYhnUclSvhxkzfRmzzWpeskBi7yXOuGQDGdmCI5iUUHz2_e8xDvrAT0_UX_x6cjqXThStP9MNdWLtjGYyOMMo7XB4"/>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-surface-container text-on-surface-variant">
+                    2 Gbr • 790 KB
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-[#D1E7DD] text-[#155724]">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span>Dinilai: 92</span>
+</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-all" type="button">Lihat Nilai</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Opsi lainnya" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span>Menampilkan <strong class="text-on-surface font-semibold">1 - 7</strong> dari <strong class="text-on-surface font-semibold">32</strong> murid di kelas terpilih</span>
+<span class="hidden md:inline text-outline-variant">•</span>
+<span class="hidden md:inline font-label-sm text-label-sm text-on-surface-variant">Halaman 1 dari 5</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center transition-colors" type="button">1</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center transition-colors" type="button">2</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center transition-colors" type="button">3</button>
+<span class="px-1 text-on-surface-variant">...</span>
+<button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center transition-colors" type="button">5</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Workflow Tip Footer -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0 mt-0.5">lightbulb</span>
+<div class="flex flex-col gap-0.5 text-on-surface-variant">
+<span class="font-title-md text-title-md text-on-surface">Tips Alur Kerja RPD v1.4</span>
+<p class="font-body-sm text-body-sm">
+          Gunakan tombol pintasan <kbd class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface font-mono text-[11px]">Beri Nilai Massal</kbd> untuk tugas pilihan ganda atau centang langsung siswa yang memerlukan koreksi cepat tanpa meninggalkan layar rekap. Setiap nilai tersimpan otomatis ke cadangan repositori aman.
+        </p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const selectAll = document.getElementById('selectAllCheckbox');
+    const rowCheckboxes = document.querySelectorAll('.row-checkbox');
+    const batchBar = document.getElementById('batchActionBar');
+    const countBadge = document.getElementById('selectedCountBadge');
+    const countText = document.getElementById('selectedCountText');
+    const clearBtn = document.getElementById('clearSelectionBtn');
+
+    function updateBatchBar() {
+      const checkedBoxes = document.querySelectorAll('.row-checkbox:checked');
+      const count = checkedBoxes.length;
+
+      if (count > 0) {
+        batchBar.classList.remove('hidden');
+        batchBar.classList.add('flex');
+        countBadge.textContent = count;
+        countText.textContent = count;
+      } else {
+        batchBar.classList.add('hidden');
+        batchBar.classList.remove('flex');
+      }
+
+      if (selectAll) {
+        selectAll.checked = count === rowCheckboxes.length;
+        selectAll.indeterminate = count > 0 && count < rowCheckboxes.length;
+      }
+
+      rowCheckboxes.forEach(cb => {
+        const tr = cb.closest('tr');
+        if (cb.checked) {
+          tr.classList.add('bg-surface-container/30');
+        } else {
+          tr.classList.remove('bg-surface-container/30');
+        }
+      });
+    }
+
+    if (selectAll) {
+      selectAll.addEventListener('change', function() {
+        rowCheckboxes.forEach(cb => {
+          cb.checked = selectAll.checked;
+        });
+        updateBatchBar();
+      });
+    }
+
+    rowCheckboxes.forEach(cb => {
+      cb.addEventListener('change', updateBatchBar);
+    });
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function() {
+        rowCheckboxes.forEach(cb => {
+          cb.checked = false;
+        });
+        if (selectAll) {
+          selectAll.checked = false;
+          selectAll.indeterminate = false;
+        }
+        updateBatchBar();
+      });
+    }
+
+    updateBatchBar();
+  })();
+</script></main></div></body></html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#455f49", "secondary-container": "#73a9fe", "on-secondary-container": "#003d7a", "on-primary-fixed-variant": "#1e5031", "on-primary-fixed": "#00210e", "surface-bright": "#f3fbf6", "on-primary": "#ffffff", "on-error-container": "#93000a", "on-secondary": "#ffffff", "primary-fixed": "#b9efc5", "on-error": "#ffffff", "secondary-fixed": "#d6e3ff", "on-tertiary-fixed-variant": "#334d38", "outline": "#717971", "secondary-fixed-dim": "#a9c7ff", "on-surface-variant": "#414942", "error-container": "#ffdad6", "tertiary-fixed": "#cceace", "on-tertiary-fixed": "#07200f", "tertiary-fixed-dim": "#b0ceb3", "on-secondary-fixed-variant": "#00468b", "primary": "#316342", "primary-container": "#4a7c59", "surface-container-low": "#edf6f1", "surface-tint": "#376847", "secondary": "#1b5eae", "on-primary-container": "#e1ffe5", "on-secondary-fixed": "#001b3d", "surface": "#f3fbf6", "inverse-surface": "#2a322f", "surface-variant": "#dce4e0", "on-background": "#151d1a", "on-surface": "#151d1a", "background": "#f3fbf6", "outline-variant": "#c1c9bf", "on-tertiary-container": "#e2ffe3", "surface-container-high": "#e2eae5", "inverse-primary": "#9dd3aa", "surface-dim": "#d3dcd7", "primary-fixed-dim": "#9dd3aa", "tertiary-container": "#5d7860", "surface-container-lowest": "#ffffff", "surface-container-highest": "#dce4e0", "on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-container": "#e7f0eb", "inverse-on-surface": "#eaf3ee" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem", "gutter-sm": "1rem", "space-xl": "2rem", "margin": "2rem", "space-sm": "0.5rem" }, "fontFamily": { "title-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">auto_stories</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight">TugasMurid</span><span class="font-label-sm text-label-sm text-on-surface-variant">Pengaturan Akun</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Notifikasi" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin-mobile flex-1"><div class="flex flex-col w-full pb-8 space-y-space-md">
+<!-- Toast Notification Dynamic Mock -->
+<div class="fixed top-20 left-4 right-4 z-50 transform -translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm p-space-md rounded-xl bg-primary text-on-primary shadow-lg" id="toast-notif">
+<span class="material-symbols-outlined text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-body-md text-body-md" id="toast-msg">Perubahan berhasil disimpan!</span>
+</div>
+<!-- Identitas Siswa Card -->
+<section class="flex flex-col bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-md text-headline-md tracking-tight shadow-inner">
+          AF
+        </div>
+<button aria-label="Ubah foto profil" class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shadow hover:bg-surface-variant transition-colors" id="btn-avatar">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+</button>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-lg text-title-lg text-on-surface truncate" id="label-student-name">Ahmad Fadhil</span>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Siswa Aktif
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">• Kelas VIII-A</span>
+</div>
+</div>
+</div>
+<!-- Edit Display Name -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-md space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1" for="input-display-name">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+          Nama Tampilan Siswa
+        </label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dapat diubah</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<input class="flex-1 min-w-0 h-11 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" id="input-display-name" type="text" value="Ahmad Fadhil"/>
+<button class="h-11 px-4 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md transition-all active:scale-95 flex items-center justify-center gap-1" id="btn-save-name">
+<span class="material-symbols-outlined text-[18px]">done</span>
+<span>Simpan</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Nama ini digunakan pada lembar pengerjaan dan rekap nilai harian.</p>
+</div>
+<!-- Data Terkunci (RPD 5.1.E) -->
+<div class="flex flex-col space-y-space-xs pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span class="font-label-md text-label-md">Data Akademik Terkunci (RPD 5.1.E)</span>
+</div>
+<div class="grid grid-cols-1 gap-2 bg-surface-container-low rounded-xl p-space-md">
+<!-- Item NIS -->
+<div class="flex items-center justify-between py-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nomor Induk Siswa (NIS)</span>
+<span class="font-title-md text-title-md text-on-surface">2026071</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-1 rounded bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span class="font-label-sm text-label-sm">Terkunci</span>
+</div>
+</div>
+<!-- Item Rombel -->
+<div class="flex items-center justify-between py-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rombel / Kelas</span>
+<span class="font-title-md text-title-md text-on-surface">VIII-A</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-1 rounded bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span class="font-label-sm text-label-sm">Terkunci</span>
+</div>
+</div>
+<!-- Item TA -->
+<div class="flex items-center justify-between py-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tahun Ajaran / Semester</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">2026/2027 Ganjil</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed/40 px-2 py-0.5 rounded">Aktif</span>
+</div>
+<div class="flex items-center gap-1.5 pt-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">info</span>
+<span class="font-label-sm text-label-sm">NIS dan Rombel hanya dapat disesuaikan oleh Wali Kelas atau Operator Madrasah.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Keamanan Akun & Ganti Kata Sandi -->
+<section class="flex flex-col bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<h2 class="font-title-lg text-title-lg text-on-surface">Keamanan Akun</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Manajemen kredensial masuk RPD</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+        Disarankan Ganti Sandi
+      </span>
+</div>
+<!-- Alert Edukatif -->
+<div class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified_user</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Ganti sandi bersifat opsional namun sangat disarankan untuk menjaga integritas dan kerahasiaan kiriman berkas tugasmu.
+      </p>
+</div>
+<!-- Form Ganti Sandi -->
+<form class="flex flex-col space-y-space-sm" id="form-password" onsubmit="event.preventDefault();">
+<!-- Kolom Sandi Saat Ini -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant" for="pwd-current">Kata Sandi Saat Ini</label>
+<div class="relative flex items-center">
+<input class="w-full h-11 pl-3.5 pr-11 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" id="pwd-current" placeholder="Masukkan kata sandi lama" type="password"/>
+<button class="absolute right-2.5 w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="togglePasswordVisibility('pwd-current', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Kolom Sandi Baru -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant" for="pwd-new">Kata Sandi Baru</label>
+<div class="relative flex items-center">
+<input class="w-full h-11 pl-3.5 pr-11 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" id="pwd-new" oninput="checkPasswordStrength(this.value)" placeholder="Minimal 6 karakter" type="password"/>
+<button class="absolute right-2.5 w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="togglePasswordVisibility('pwd-new', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+<!-- Password Strength Meter -->
+<div class="flex items-center gap-2 pt-1">
+<div class="flex-1 h-1.5 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-outline-variant transition-all duration-300 w-0" id="strength-bar"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="strength-label">Belum diisi</span>
+</div>
+</div>
+<!-- Kolom Konfirmasi Sandi Baru -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant" for="pwd-confirm">Konfirmasi Kata Sandi Baru</label>
+<div class="relative flex items-center">
+<input class="w-full h-11 pl-3.5 pr-11 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20" id="pwd-confirm" placeholder="Ketik ulang kata sandi baru" type="password"/>
+<button class="absolute right-2.5 w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="togglePasswordVisibility('pwd-confirm', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Tombol Perbarui Sandi -->
+<div class="pt-2">
+<button class="w-full h-11 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md flex items-center justify-center gap-space-xs shadow transition-all active:scale-[0.99]" id="btn-update-pwd" type="button">
+<span class="material-symbols-outlined text-[20px]">key</span>
+<span>Perbarui Kata Sandi</span>
+</button>
+</div>
+</form>
+</section>
+<!-- Preferensi & Hemat Kuota (PWA Optimized) -->
+<section class="flex flex-col bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex flex-col">
+<h2 class="font-title-lg text-title-lg text-on-surface">Preferensi Aplikasi</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Optimasi kuota dan kenyamanan tampilan (RPD 7.4)</span>
+</div>
+<div class="flex flex-col space-y-space-sm">
+<!-- Toggle Kompresi Gambar (Hemat Kuota) -->
+<div class="flex items-center justify-between p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-start gap-space-sm pr-2">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed mt-0.5">
+<span class="material-symbols-outlined text-[20px]">photo_size_select_small</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface">Kompresi Gambar</span>
+<span class="bg-primary/10 text-primary text-label-sm font-label-sm px-1.5 py-0.2 rounded">Hemat Kuota</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Otomatis kompres foto pengerjaan tugas ke ~300-500 KB sebelum diunggah.</span>
+</div>
+</div>
+<!-- Switch -->
+<button aria-checked="true" class="w-12 h-7 bg-primary rounded-full relative transition-colors cursor-pointer flex-shrink-0" id="toggle-compress" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="w-5 h-5 bg-surface-container-lowest rounded-full absolute top-1 right-1 shadow-sm transition-transform"></span>
+</button>
+</div>
+<!-- Toggle Mode Tampilan (Opsional RPD 5.1.E) -->
+<div class="flex items-center justify-between p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-start gap-space-sm pr-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface mt-0.5">
+<span class="material-symbols-outlined text-[20px]">contrast</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Mode Tampilan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sesuaikan dengan kenyamanan membaca di luar atau dalam ruangan.</span>
+</div>
+</div>
+<!-- Simple Tab Mode -->
+<div class="flex bg-surface-container p-1 rounded-lg">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-sm">Terang</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">Gelap</button>
+</div>
+</div>
+<!-- Status Penyimpanan Offline & Draf -->
+<div class="flex items-center justify-between p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">cloud_off</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Draf Offline Lokal</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">0 antrean kiriman tersimpan</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-variant font-label-sm text-label-sm transition-colors">
+          Bersihkan
+        </button>
+</div>
+</div>
+</section>
+<!-- Informasi Bantuan & Wali Kelas -->
+<section class="flex flex-col bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Wali Kelas / Pembina</span>
+<span class="font-title-md text-title-md text-on-surface">Bu Nurul Farida, M.Pd.</span>
+</div>
+</div>
+<div class="flex flex-col p-space-md rounded-xl bg-secondary-fixed/30 text-on-surface space-y-space-xs">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">help_outline</span>
+<span class="font-title-md text-title-md">Kendala Akses atau Lupa Sandi?</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Jika kamu tidak bisa masuk atau lupa sandi akun, hubungi wali kelas untuk reset instan via konsol pengajar.
+      </p>
+<div class="pt-1">
+<a class="inline-flex items-center justify-center gap-2 w-full h-10 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container transition-all" href="https://wa.me/?text=Halo%20Bu%20Nurul,%20saya%20Ahmad%20Fadhil%20(NIS%202026071)%20memerlukan%20bantuan%20reset%20sandi%20aplikasi%20TugasMurid." target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Hubungi Guru via WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Info Versi Sistem -->
+<div class="flex items-center justify-center gap-2 pt-2 text-on-surface-variant text-center">
+<span class="material-symbols-outlined text-[15px]">dns</span>
+<span class="font-label-sm text-label-sm">PWA RPD v1.4 • Terhubung ke Serverless Cloudflare</span>
+</div>
+</section>
+<!-- Tombol Keluar (Logout) -->
+<div class="pt-2 px-1">
+<button class="w-full h-12 rounded-xl bg-surface-container-high hover:bg-error-container text-error hover:text-on-error-container font-title-md text-title-md flex items-center justify-center gap-space-xs transition-all active:scale-[0.98]" id="btn-logout">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span>Keluar dari Akun</span>
+</button>
+</div>
+</div>
+<script>
+  // Utility for Toast notification
+  function showToast(message, isError = false) {
+    const toast = document.getElementById('toast-notif');
+    const toastMsg = document.getElementById('toast-msg');
+    const toastIcon = document.getElementById('toast-icon');
+    
+    if (!toast) return;
+
+    toastMsg.textContent = message;
+    if (isError) {
+      toast.classList.remove('bg-primary', 'text-on-primary');
+      toast.classList.add('bg-error', 'text-on-error');
+      toastIcon.textContent = 'error';
+    } else {
+      toast.classList.remove('bg-error', 'text-on-error');
+      toast.classList.add('bg-primary', 'text-on-primary');
+      toastIcon.textContent = 'check_circle';
+    }
+
+    toast.classList.remove('-translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('-translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+
+  // Toggle Password Mask
+  function togglePasswordVisibility(fieldId, triggerBtn) {
+    const input = document.getElementById(fieldId);
+    if (!input) return;
+    const isPassword = input.type === 'password';
+    input.type = isPassword ? 'text' : 'password';
+    const icon = triggerBtn.querySelector('.material-symbols-outlined');
+    if (icon) {
+      icon.textContent = isPassword ? 'visibility_off' : 'visibility';
+    }
+  }
+
+  // Password Strength Evaluator
+  function checkPasswordStrength(val) {
+    const bar = document.getElementById('strength-bar');
+    const label = document.getElementById('strength-label');
+    if (!bar || !label) return;
+
+    if (!val || val.length === 0) {
+      bar.style.width = '0%';
+      bar.className = 'h-full bg-outline-variant transition-all duration-300';
+      label.textContent = 'Belum diisi';
+      label.className = 'font-label-sm text-label-sm text-on-surface-variant';
+      return;
+    }
+
+    if (val.length < 6) {
+      bar.style.width = '30%';
+      bar.className = 'h-full bg-error transition-all duration-300';
+      label.textContent = 'Terlalu Pendek (< 6)';
+      label.className = 'font-label-sm text-label-sm text-error';
+    } else if (val.length >= 6 && val.length < 10) {
+      bar.style.width = '65%';
+      bar.className = 'h-full bg-tertiary transition-all duration-300';
+      label.textContent = 'Sedang';
+      label.className = 'font-label-sm text-label-sm text-tertiary';
+    } else {
+      bar.style.width = '100%';
+      bar.className = 'h-full bg-primary transition-all duration-300';
+      label.textContent = 'Kuat';
+      label.className = 'font-label-sm text-label-sm text-primary';
+    }
+  }
+
+  // Toggle Switch Handler
+  function toggleSwitch(btn) {
+    const isChecked = btn.getAttribute('aria-checked') === 'true';
+    const nextState = !isChecked;
+    btn.setAttribute('aria-checked', String(nextState));
+
+    const knob = btn.querySelector('span');
+    if (nextState) {
+      btn.classList.remove('bg-surface-variant');
+      btn.classList.add('bg-primary');
+      knob.classList.remove('left-1');
+      knob.classList.add('right-1');
+      showToast('Kompresi foto hemat kuota aktif (~300-500 KB)');
+    } else {
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-surface-variant');
+      knob.classList.remove('right-1');
+      knob.classList.add('left-1');
+      showToast('Kompresi nonaktif: ukuran file original diunggah');
+    }
+  }
+
+  // Save Display Name Handler
+  document.getElementById('btn-save-name')?.addEventListener('click', () => {
+    const input = document.getElementById('input-display-name');
+    const label = document.getElementById('label-student-name');
+    if (input && input.value.trim().length > 0) {
+      const newName = input.value.trim();
+      label.textContent = newName;
+      showToast('Nama tampilan berhasil disimpan!');
+    } else {
+      showToast('Nama tampilan tidak boleh kosong!', true);
+    }
+  });
+
+  // Change Avatar Action
+  document.getElementById('btn-avatar')?.addEventListener('click', () => {
+    showToast('Pilih foto profil dari galeri atau kamera');
+  });
+
+  // Update Password Handler
+  document.getElementById('btn-update-pwd')?.addEventListener('click', () => {
+    const cur = document.getElementById('pwd-current')?.value;
+    const nw = document.getElementById('pwd-new')?.value;
+    const conf = document.getElementById('pwd-confirm')?.value;
+
+    if (!cur) {
+      showToast('Masukkan kata sandi saat ini terlebih dahulu.', true);
+      return;
+    }
+    if (!nw || nw.length < 6) {
+      showToast('Kata sandi baru minimal 6 karakter.', true);
+      return;
+    }
+    if (nw !== conf) {
+      showToast('Konfirmasi kata sandi baru tidak cocok.', true);
+      return;
+    }
+
+    // Success Simulation
+    document.getElementById('pwd-current').value = '';
+    document.getElementById('pwd-new').value = '';
+    document.getElementById('pwd-confirm').value = '';
+    checkPasswordStrength('');
+    showToast('Kata sandi akunmu berhasil diperbarui!');
+  });
+
+  // Logout Interaction
+  document.getElementById('btn-logout')?.addEventListener('click', () => {
+    if (confirm('Apakah kamu yakin ingin keluar dari akun TugasMurid di perangkat ini?')) {
+      showToast('Keluar akun... Mengalihkan ke login');
+    }
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-title-md"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="beranda" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm">Beranda</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="kirim-tugas" href="#"><span class="material-symbols-outlined text-[22px]">upload_file</span><span class="font-label-sm text-label-sm">Kirim</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="rekap-nilai" href="#"><span class="material-symbols-outlined text-[22px]">bar_chart</span><span class="font-label-sm text-label-sm">Rekap</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 transition-colors text-primary font-title-md" data-path="pengaturan-akun" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-label-sm">Akun</span></a></div></nav></body></html>

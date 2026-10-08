@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#455f49", "secondary-container": "#73a9fe", "on-secondary-container": "#003d7a", "on-primary-fixed-variant": "#1e5031", "on-primary-fixed": "#00210e", "surface-bright": "#f3fbf6", "on-primary": "#ffffff", "on-error-container": "#93000a", "on-secondary": "#ffffff", "primary-fixed": "#b9efc5", "on-error": "#ffffff", "secondary-fixed": "#d6e3ff", "on-tertiary-fixed-variant": "#334d38", "outline": "#717971", "secondary-fixed-dim": "#a9c7ff", "on-surface-variant": "#414942", "error-container": "#ffdad6", "tertiary-fixed": "#cceace", "on-tertiary-fixed": "#07200f", "tertiary-fixed-dim": "#b0ceb3", "on-secondary-fixed-variant": "#00468b", "primary": "#316342", "primary-container": "#4a7c59", "surface-container-low": "#edf6f1", "surface-tint": "#376847", "secondary": "#1b5eae", "on-primary-container": "#e1ffe5", "on-secondary-fixed": "#001b3d", "surface": "#f3fbf6", "inverse-surface": "#2a322f", "surface-variant": "#dce4e0", "on-background": "#151d1a", "on-surface": "#151d1a", "background": "#f3fbf6", "outline-variant": "#c1c9bf", "on-tertiary-container": "#e2ffe3", "surface-container-high": "#e2eae5", "inverse-primary": "#9dd3aa", "surface-dim": "#d3dcd7", "primary-fixed-dim": "#9dd3aa", "tertiary-container": "#5d7860", "surface-container-lowest": "#ffffff", "surface-container-highest": "#dce4e0", "on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-container": "#e7f0eb", "inverse-on-surface": "#eaf3ee" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem", "gutter-sm": "1rem", "space-xl": "2rem", "margin": "2rem", "space-sm": "0.5rem" }, "fontFamily": { "title-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">auto_stories</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight">TugasMurid</span><span class="font-label-sm text-label-sm text-on-surface-variant">Rekap Nilai</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Notifikasi" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin-mobile flex-1"><div class="flex flex-col w-full pb-8">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-surface-container-low via-surface-container to-surface-container-high p-space-md shadow-sm mb-space-md">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-primary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between gap-space-sm relative z-10">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Portofolio Akademik</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-0.5">Rekap Tugas &amp; Nilai Saya</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pantau perkembangan belajar, ulasan guru, dan capaian harianmu.</p>
+</div>
+<div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-md pt-space-sm relative z-10">
+<div class="flex flex-col bg-surface-container-lowest/80 backdrop-blur-md rounded-xl p-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Rata-rata Nilai</span>
+<span class="material-symbols-outlined text-primary text-[16px]">trending_up</span>
+</div>
+<div class="flex items-baseline gap-1.5 mt-1">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">88.5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 100</span>
+</div>
+<div class="mt-1 flex items-center gap-1">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-[10px]">
+            Sangat Baik
+          </span>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-lowest/80 backdrop-blur-md rounded-xl p-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Progres Tugas</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">pie_chart</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">5</span>
+<span class="font-body-md text-body-md text-on-surface-variant">dari 6 Selesai</span>
+</div>
+<div class="w-full bg-surface-variant rounded-full h-1.5 mt-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 83.3%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-2 bg-surface-container-low rounded-xl mb-space-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary">touch_app</span>
+<span class="font-label-sm text-label-sm">Ketuk tugas untuk meninjau kembali teks jawaban dan foto yang telah Anda kirimkan.</span>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-1 mb-space-md no-scrollbar">
+<button class="filter-chip active flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shrink-0 shadow-sm transition-all" data-filter="all">
+<span>Semua</span>
+<span class="w-4 h-4 rounded-full bg-on-primary/20 flex items-center justify-center text-[10px]">6</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all" data-filter="graded">
+<span>Sudah Dinilai</span>
+<span class="w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center text-[10px]">4</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all" data-filter="pending">
+<span>Menunggu Dinilai</span>
+<span class="w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center text-[10px]">1</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all" data-filter="unsubmitted">
+<span>Belum Kumpul</span>
+<span class="w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center text-[10px]">1</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-md" id="task-card-list">
+<!-- Card 1: Menunggu Dinilai -->
+<div class="task-card group relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md cursor-pointer" data-category="pending" onclick="openPreviewModal('Tugas 4: Rangkuman Fotosintesis', 'Menunggu Dinilai', 'Proses Verifikasi', '18 Okt 2026, 14:22 WIB', '3 Lampiran foto telah diunggah dengan catatan lengkap bab klorofil.', 'Nilai sedang diproses oleh Bu Guru.')">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+              Menunggu Dinilai
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IPA Biologi</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface truncate">Tugas 4: Rangkuman Fotosintesis</h3>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:bg-primary-fixed group-hover:text-on-primary-fixed-variant transition-colors shrink-0">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">send</span>
+<span>Dikirim: 18 Okt 2026, 14:22 WIB</span>
+<span>•</span>
+<span class="inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[15px]">photo_library</span>
+          3 Lampiran foto
+        </span>
+</div>
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-amber-800 shrink-0 mt-0.5">info</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Transparansi Penilaian (RPD 14.1)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Nilai sedang diproses oleh Bu Guru dan akan tampil otomatis setelah dipublikasikan.</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Tugas 3 - Sudah Dinilai (Featured Feedback) -->
+<div class="task-card group relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md cursor-pointer" data-category="graded" onclick="openPreviewModal('Tugas 3: Struktur Sel Tumbuhan', 'Sudah Dinilai', '92 / 100', '10 Okt 2026, 10:15 WIB', 'Teks lembar kerja organel dan 2 foto mikroskop berskala.', 'Rangkuman sangat rapi dan sketsa organel kloroplas jelas.')">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+              Sudah Dinilai
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IPA Biologi</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface truncate">Tugas 3: Struktur Sel Tumbuhan</h3>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Nilai Akhir</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">92<span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/100</span></span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>Dikirim: 10 Okt 2026, 10:15 WIB</span>
+<span class="inline-flex items-center px-1.5 py-0.2 rounded bg-surface-container font-label-sm text-[10px] text-tertiary">Tepat Waktu</span>
+</div>
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">rate_review</span>
+<span class="font-label-sm text-label-sm font-semibold">Catatan Bu Hartini:</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic bg-surface-container-lowest p-2 rounded">
+          "Rangkuman sangat rapi dan sketsa organel kloroplas jelas. Pertahankan ketelitian penamaan bagian membran!"
+        </p>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<div class="flex items-center -space-x-2 overflow-hidden">
+<div class="inline-block h-7 w-7 rounded-full bg-surface-container ring-2 ring-surface-container-lowest flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">image</span>
+</div>
+<div class="inline-block h-7 w-7 rounded-full bg-surface-container-high ring-2 ring-surface-container-lowest flex items-center justify-center text-on-surface-variant font-label-sm text-[11px]">
+            +2
+          </div>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-secondary-fixed text-on-secondary-fixed-variant hover:bg-secondary-container transition-colors font-label-md text-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Lihat Kiriman &amp; Foto</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Tugas 2 - Sudah Dinilai -->
+<div class="task-card group relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md cursor-pointer" data-category="graded" onclick="openPreviewModal('Tugas 2: Klasifikasi Makhluk Hidup', 'Sudah Dinilai', '85 / 100', '03 Okt 2026, 09:00 WIB', 'Bagan kunci determinasi dikotil dan monokotil.', 'Tingkatkan kerapian tabel klasifikasi.')">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+              Sudah Dinilai
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IPA Biologi</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface truncate">Tugas 2: Klasifikasi Makhluk Hidup</h3>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Nilai Akhir</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">85<span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/100</span></span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">calendar_today</span>
+<span>Dikirim: 03 Okt 2026, 09:00 WIB • 1 Lampiran PDF</span>
+</div>
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">comment</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface">Catatan Guru:</span> Tingkatkan kerapian tabel klasifikasi.
+        </p>
+</div>
+</div>
+<!-- Card 4: Tugas 1 - Sudah Dinilai -->
+<div class="task-card group relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md cursor-pointer" data-category="graded" onclick="openPreviewModal('Tugas 1: Pengenalan Mikroskop &amp; Sel', 'Sudah Dinilai', '88 / 100', '26 Sep 2026, 11:30 WIB', 'Foto identifikasi bagian okuler dan diafragma mikroskop.', 'Bagus, identifikasi bagian mikroskop tepat.')">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+              Sudah Dinilai
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IPA Biologi</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface truncate">Tugas 1: Pengenalan Mikroskop &amp; Sel</h3>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Nilai Akhir</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">88<span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/100</span></span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">history</span>
+<span>Dikirim: 26 Sep 2026, 11:30 WIB • 2 Lampiran</span>
+</div>
+</div>
+<!-- Card 5: Latihan SPLDV - Belum Dikumpulkan -->
+<div class="task-card group relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md" data-category="unsubmitted">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">error_outline</span>
+              Belum Dikumpulkan
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Matematika</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface truncate">Latihan SPLDV &amp; Eliminasi</h3>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-2 text-error font-body-sm text-body-sm font-medium">
+<span class="material-symbols-outlined text-[16px]">alarm</span>
+<span>Tenggat: 20 Okt 2026, 23:59 WIB</span>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Selesaikan sebelum batas waktu!</span>
+<a class="inline-flex items-center gap-1 px-3.5 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-transform active:scale-95 font-label-md text-label-md font-semibold shadow-sm" href="#">
+<span>Kirim Sekarang</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Micro Modal for Assignment Preview Detail -->
+<div class="fixed inset-0 z-50 flex items-end justify-center bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" id="preview-modal">
+<div class="w-full max-w-lg bg-surface rounded-t-2xl p-space-lg shadow-xl transform translate-y-full transition-transform duration-300 flex flex-col max-h-[751px] overflow-y-auto">
+<div class="w-12 h-1.5 bg-surface-variant rounded-full mx-auto mb-space-md shrink-0"></div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold w-max mb-1" id="modal-status-badge">
+            Status
+          </span>
+<h3 class="font-headline-md text-headline-md text-on-surface" id="modal-title">Judul Tugas</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="closePreviewModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Nilai Tercatat</span>
+<span class="font-title-lg text-title-lg text-primary font-bold" id="modal-score">--</span>
+</div>
+<div class="mt-space-md flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Riwayat Pengiriman</span>
+<div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-sm">
+<p class="font-label-md text-label-md text-tertiary font-semibold" id="modal-timestamp"></p>
+<p class="font-body-sm text-body-sm text-on-surface mt-1" id="modal-submission-text"></p>
+<div class="grid grid-cols-3 gap-2 mt-space-sm">
+<div class="h-20 rounded-lg bg-surface-container-high flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[22px]">image</span>
+<span class="font-label-sm text-[10px] mt-0.5">Lembar_1.jpg</span>
+</div>
+<div class="h-20 rounded-lg bg-surface-container-high flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[22px]">image</span>
+<span class="font-label-sm text-[10px] mt-0.5">Lembar_2.jpg</span>
+</div>
+<div class="h-20 rounded-lg bg-surface-container-high flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[22px]">description</span>
+<span class="font-label-sm text-[10px] mt-0.5">Bagan.pdf</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Ulasan Guru</span>
+<div class="p-space-sm bg-surface-container-low rounded-xl">
+<p class="font-body-sm text-body-sm text-on-surface italic" id="modal-feedback"></p>
+</div>
+</div>
+<div class="mt-space-lg flex gap-space-sm">
+<button class="w-full py-2.5 rounded-xl bg-surface-container text-on-surface font-title-md text-title-md text-center" onclick="closePreviewModal()">
+          Tutup
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Filter chips interaction
+  const filterButtons = document.querySelectorAll('.filter-chip');
+  const taskCards = document.querySelectorAll('.task-card');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        b.classList.add('bg-surface-container', 'text-on-surface-variant');
+        const badge = b.querySelector('span:last-child');
+        if (badge) {
+          badge.classList.remove('bg-on-primary/20');
+          badge.classList.add('bg-surface-variant');
+        }
+      });
+
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      const activeBadge = btn.querySelector('span:last-child');
+      if (activeBadge) {
+        activeBadge.classList.remove('bg-surface-variant');
+        activeBadge.classList.add('bg-on-primary/20');
+      }
+
+      const filterValue = btn.getAttribute('data-filter');
+
+      taskCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        if (filterValue === 'all' || category === filterValue) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Modal interactions
+  const modal = document.getElementById('preview-modal');
+  const modalSheet = modal.querySelector('div');
+
+  function openPreviewModal(title, status, score, timestamp, text, feedback) {
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-status-badge').textContent = status;
+    document.getElementById('modal-score').textContent = score;
+    document.getElementById('modal-timestamp').textContent = timestamp;
+    document.getElementById('modal-submission-text').textContent = text;
+    document.getElementById('modal-feedback').textContent = feedback;
+
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100');
+    modalSheet.classList.remove('translate-y-full');
+    modalSheet.classList.add('translate-y-0');
+  }
+
+  function closePreviewModal() {
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modal.classList.remove('opacity-100');
+    modalSheet.classList.add('translate-y-full');
+    modalSheet.classList.remove('translate-y-0');
+  }
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closePreviewModal();
+    }
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-title-md"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="beranda" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm">Beranda</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="kirim-tugas" href="#"><span class="material-symbols-outlined text-[22px]">upload_file</span><span class="font-label-sm text-label-sm">Kirim</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 transition-colors text-primary font-title-md" data-path="rekap-nilai" href="#"><span class="material-symbols-outlined text-[22px]">bar_chart</span><span class="font-label-sm text-label-sm">Rekap</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="profil-akun" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-label-sm">Akun</span></a></div></nav></body></html>

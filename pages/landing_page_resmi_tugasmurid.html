@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>TugasMurid - Portal Penugasan Modern &amp; Hemat Kuota</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-container": "#003d7a", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#00468b", "on-tertiary": "#ffffff", "secondary-fixed": "#d6e3ff", "primary-container": "#4a7c59", "surface-container-highest": "#dce4e0", "on-secondary-fixed": "#001b3d", "surface-container": "#e7f0eb", "background": "#f3fbf6", "on-tertiary-fixed-variant": "#334d38", "primary": "#316342", "on-error-container": "#93000a", "primary-fixed-dim": "#9dd3aa", "surface-container-high": "#e2eae5", "error": "#ba1a1a", "surface-variant": "#dce4e0", "surface-bright": "#f3fbf6", "on-primary-fixed": "#00210e", "on-tertiary-fixed": "#07200f", "secondary": "#1b5eae", "on-primary-fixed-variant": "#1e5031", "tertiary-container": "#5d7860", "primary-fixed": "#b9efc5", "surface-container-low": "#edf6f1", "surface-tint": "#376847", "inverse-on-surface": "#eaf3ee", "tertiary-fixed": "#cceace", "on-secondary": "#ffffff", "inverse-surface": "#2a322f", "outline-variant": "#c1c9bf", "surface-dim": "#d3dcd7", "tertiary-fixed-dim": "#b0ceb3", "on-background": "#151d1a", "on-surface": "#151d1a", "surface": "#f3fbf6", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#e2ffe3", "on-surface-variant": "#414942", "inverse-primary": "#9dd3aa", "on-error": "#ffffff", "secondary-container": "#73a9fe", "outline": "#717971", "on-primary": "#ffffff", "on-primary-container": "#e1ffe5", "tertiary": "#455f49", "secondary-fixed-dim": "#a9c7ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "margin": "2rem", "gutter-sm": "1rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "gutter": "1.5rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-container font-headline-md text-headline-md"><span class="material-symbols-outlined text-[20px]">school</span></div><div class="flex flex-col"><span class="font-title-lg text-title-lg tracking-tight text-primary leading-none">TugasMurid</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">RPD v1.4 Engine</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-title-md rounded-lg"><a aria-current="page" class="px-space-sm py-space-xs transition-all bg-surface-container-high text-on-surface font-title-md rounded-lg" data-path="tentang" href="#">Tentang</a><a class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="fitur-murid" href="#">Fitur Murid</a><a class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="fitur-guru" href="#">Fitur Guru</a><a class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="arsitektur-hemat-kuota" href="#">Arsitektur Hemat Kuota</a><a class="px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="faq" href="#">FAQ</a></nav><div class="flex items-center gap-space-sm"><a class="inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors" data-path="portal-login" href="#"><span class="material-symbols-outlined text-[18px] mr-1.5">login</span>Masuk ke Portal</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative overflow-hidden pt-space-lg pb-space-xl px-margin-mobile md:px-margin">
+<!-- Subtle Background Ambient Glows -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[340px] bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/3 -right-24 w-80 h-80 bg-secondary-fixed/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+<!-- Badge RPD -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md shadow-sm mb-space-md">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>RPD v1.4 • Solusi Belajar Digital Mandiri &amp; Ramah Kuota</span>
+</div>
+<!-- Headline & Subheadline -->
+<h1 class="max-w-4xl font-headline-xl text-headline-xl text-on-surface tracking-tight mb-space-sm">
+        Pengumpulan Tugas Sekolah yang <span class="text-primary underline decoration-primary-fixed-dim decoration-wavy decoration-2">Tenang, Cepat</span>, dan Hemat Kuota.
+      </h1>
+<p class="max-w-2xl font-body-lg text-body-lg text-on-surface-variant mb-space-lg">
+        Platform mandiri untuk murid mengumpulkan lembar tugas teks &amp; foto langsung dari ponsel, serta memudahkan guru merekap dan menilai tanpa tercecer di grup chat.
+      </p>
+<!-- Dual CTA Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-space-sm mb-space-xl">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md shadow-md hover:shadow-lg transition-all transform active:scale-95" href="#portal-murid">
+<span>Buka Portal Murid (PWA)</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-secondary-container font-title-md text-title-md shadow-sm transition-all" href="#konsol-guru">
+<span class="material-symbols-outlined text-[20px] text-secondary">verified_user</span>
+<span>Masuk Konsol Guru &amp; Admin</span>
+</a>
+</div>
+<!-- Trust & Proof Micro-Stats Grid -->
+<div class="w-full max-w-5xl grid grid-cols-2 md:grid-cols-4 gap-space-sm mb-space-xl">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm text-left flex flex-col justify-between">
+<div class="flex items-center gap-space-xs text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Kapasitas</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">±500 Siswa</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Terkelola stabil &amp; efisien</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm text-left flex flex-col justify-between">
+<div class="flex items-center gap-space-xs text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]">photo_size_select_small</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">RPD 7.4 Kompresi</span>
+</div>
+<div class="font-headline-md text-headline-md text-primary">300–500 KB</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Otomatis WebP per lembar</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm text-left flex flex-col justify-between">
+<div class="flex items-center gap-space-xs text-secondary mb-1">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Keamanan</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">Git-Backed</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Database privat terisolasi</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm text-left flex flex-col justify-between">
+<div class="flex items-center gap-space-xs text-tertiary mb-1">
+<span class="material-symbols-outlined text-[18px]">savings</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Biaya Server</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">Rp 0 / Bln</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cloudflare + GitHub Pages</span>
+</div>
+</div>
+<!-- HERO MOCKUP VISUAL INTERFACE (Side-by-side PWA Phone & Desktop Console) -->
+<div class="w-full max-w-6xl relative mt-space-sm">
+<div class="bg-surface-container-low rounded-2xl p-space-sm md:p-space-lg shadow-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Mobile PWA Preview (Left / Murid) -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="w-full max-w-[320px] bg-surface-container-lowest rounded-3xl p-4 shadow-xl text-left">
+<!-- Phone Top Bar -->
+<div class="flex justify-between items-center pb-3 mb-3 bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-label-md text-label-md">TM</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface leading-none">Ahmad Dani</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">NIS: 20240811 • VII-B</div>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mr-1"></span>Online
+                  </span>
+</div>
+<!-- Assignment Card in PWA -->
+<div class="bg-surface-container rounded-xl p-3 mb-3">
+<div class="flex justify-between items-start mb-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm">Matematika</span>
+<span class="text-error font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">alarm</span> 2 Jam Lagi
+                    </span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Bab 3: Aljabar Linier</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Kerjakan soal hal. 42 no. 1-5 di buku tulis lalu unggah foto lembar tugas.</p>
+<!-- Upload State Box -->
+<div class="bg-surface-container-lowest rounded-lg p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<div class="leading-tight">
+<div class="font-label-md text-label-md text-on-surface">tugas_aljabar_dani.webp</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">342 KB • Dikompresi otomatis</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified</span>
+</div>
+</div>
+<!-- Quick Submission Action -->
+<button class="w-full py-2.5 rounded-xl bg-primary text-on-primary font-title-md text-title-md flex items-center justify-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">send</span>
+                  Kirim Jawaban Sekarang
+                </button>
+</div>
+</div>
+<!-- Desktop Evaluation Screen (Right / Guru) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-space-md shadow-md text-left">
+<div class="flex flex-wrap items-center justify-between pb-space-sm mb-space-sm gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="p-1.5 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[18px]">rate_review</span>
+</span>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Pemeriksaan Split-View</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Tugas: Matematika - Aljabar Linier (Kelas VII-B)</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">28 / 32 Dinilai</span>
+</div>
+</div>
+<!-- Split View Representation -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm bg-surface-container-low p-space-sm rounded-xl mb-space-sm">
+<!-- Submission Preview Image Left -->
+<div class="bg-surface-container-lowest rounded-lg p-space-xs flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lembar 1 dari 2</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-1.5 py-0.5 rounded text-primary">WebP 320 KB</span>
+</div>
+<!-- Simulated Student Document -->
+<div class="relative bg-surface rounded-md p-3 h-36 flex flex-col justify-center items-center text-center overflow-hidden">
+<div class="w-full text-left font-body-sm text-[11px] leading-tight text-on-surface-variant opacity-80 select-none">
+<p class="font-semibold text-on-surface">Penyelesaian Soal #1:</p>
+<p>2x + 7 = 19 → 2x = 12 → x = 6</p>
+<p class="mt-1 font-semibold text-on-surface">Penyelesaian Soal #2:</p>
+<p>5y - 3 = 2y + 9 → 3y = 12 → y = 4</p>
+</div>
+<div class="absolute bottom-1 right-2 text-primary font-label-sm text-label-sm flex items-center">
+<span class="material-symbols-outlined text-[14px] mr-0.5">zoom_in</span>Klik Perbesar
+                    </div>
+</div>
+</div>
+<!-- Grading Panel Right -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-label-md text-on-surface">Nilai Akhir (Skala 100)</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">Tuntas</span>
+</div>
+<div class="flex items-center gap-space-xs mb-3">
+<input class="w-16 h-10 text-center font-headline-md text-headline-md bg-surface-container-low rounded-lg text-primary focus:outline-none" readonly="" type="number" value="92"/>
+<div class="text-on-surface-variant font-body-sm text-body-sm">/ 100 poin</div>
+</div>
+<!-- Quick Rubric Chips -->
+<div class="flex flex-wrap gap-1 mb-2">
+<span class="px-2 py-1 bg-surface-container text-on-surface-variant rounded font-label-sm text-label-sm">✓ Langkah runtut</span>
+<span class="px-2 py-1 bg-surface-container text-on-surface-variant rounded font-label-sm text-label-sm">✓ Tulisan jelas</span>
+</div>
+</div>
+<button class="w-full py-2 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded-lg flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">save</span>
+                    Simpan &amp; Lanjut Siswa Berikut
+                  </button>
+</div>
+</div>
+<!-- Bottom Meta Info -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm px-1">
+<span>Siswa: Ahmad Dani (NIS: 20240811)</span>
+<span>Waktu Kirim: 14:22 WIB • Tepat Waktu</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PROBLEM VS SOLUTION SECTION -->
+<section class="py-space-xl px-margin-mobile md:px-margin bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="px-space-md py-1 rounded-full bg-surface-container-highest text-secondary font-label-md text-label-md">Efisiensi Mengajar Nyata</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-space-xs">
+          Sebelum TugasMurid vs Sesudah TugasMurid
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+          Hilangkan kepusingan merekap foto tugas siswa secara manual dari chat grup yang tercampur aduk.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- SEBELUM TUGASMURID -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-xs pb-space-sm mb-space-md bg-error-container/30 p-space-sm rounded-xl">
+<div class="w-9 h-9 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-error-container">Sebelum Memakai TugasMurid</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Kendala klasik via WhatsApp &amp; Drive konvensional</p>
+</div>
+</div>
+<ul class="space-y-space-md font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] mt-0.5">sms_failed</span>
+<div>
+<strong class="text-on-surface">Tugas tercecer di grup obrolan:</strong>
+<p class="font-body-sm text-body-sm">Pesan tertimbun obrolan santai, konfirmasi stiker, dan rentan hilang saat riwayat chat terhapus.</p>
+</div>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] mt-0.5">sd_card_alert</span>
+<div>
+<strong class="text-on-surface">Memori smartphone guru penuh &amp; lemot:</strong>
+<p class="font-body-sm text-body-sm">Ratusan foto mentah berukuran 3-6 MB menguras ruang penyimpanan dan kuota guru.</p>
+</div>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] mt-0.5">quiz</span>
+<div>
+<strong class="text-on-surface">Murid bingung status pengumpulan:</strong>
+<p class="font-body-sm text-body-sm">Siswa sering bertanya "Tugas saya sudah masuk belum bu?" karena tidak ada tanda terima valid.</p>
+</div>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] mt-0.5">content_copy</span>
+<div>
+<strong class="text-on-surface">Data ganda dan siswa titip nama:</strong>
+<p class="font-body-sm text-body-sm">Nama di profil WA sering memakai inisial atau nomor tak dikenal, menyulitkan rekap wali kelas.</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- SESUDAH TUGASMURID -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-xs pb-space-sm mb-space-md bg-primary-fixed/40 p-space-sm rounded-xl">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary">Sesudah Memakai TugasMurid</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Sesuai standar efisiensi RPD v1.4</p>
+</div>
+</div>
+<ul class="space-y-space-md font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check_circle</span>
+<div>
+<strong class="text-on-surface">Terkumpul rapi dalam 1 dashboard:</strong>
+<p class="font-body-sm text-body-sm">Semua kiriman tertata otomatis per rombel, tanggal, dan judul bab penugasan tanpa tercecer.</p>
+</div>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">tune</span>
+<div>
+<strong class="text-on-surface">Auto-kompresi WebP hemat storage:</strong>
+<p class="font-body-sm text-body-sm">Mesin RPD 7.4 mengecilkan foto jadi 300–500 KB di browser murid sebelum diunggah ke cloud.</p>
+</div>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">visibility</span>
+<div>
+<strong class="text-on-surface">Transparansi nilai &amp; catatan revisi:</strong>
+<p class="font-body-sm text-body-sm">Murid dapat melihat langsung nilai yang dipublikasikan beserta evaluasi spesifik dari guru.</p>
+</div>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">badge</span>
+<div>
+<strong class="text-on-surface">Validasi NIS anti-duplikat:</strong>
+<p class="font-body-sm text-body-sm">Otentikasi berbasis Nomor Induk Siswa yang diverifikasi wali kelas, menjamin kepastian identitas siswa.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- FITUR UTAMA DUAL-ROLE (RPD 3 & 5) -->
+<section class="py-space-xl px-margin-mobile md:px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="px-space-md py-1 rounded-full bg-surface-container text-primary font-label-md text-label-md">RPD Bagian 3 • Modul Fungsional</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-space-xs">
+          Didesain Khusus untuk Dua Sisi Pengguna
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+          Antarmuka murid yang sesederhana aplikasi pesan instan, dipadu dengan panel kerja guru yang lengkap dan komprehensif.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- ROLE MURID -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg shadow-sm flex flex-col justify-between" id="portal-murid">
+<div>
+<div class="flex items-center gap-space-xs mb-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[22px]">smartphone</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Untuk Murid (Mobile-First PWA)</h3>
+<p class="font-label-md text-label-md text-primary">Akses langsung via browser HP tanpa instal APK berat</p>
+</div>
+</div>
+<div class="space-y-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs mb-1 text-primary">
+<span class="material-symbols-outlined text-[20px]">arrows_outward</span>
+<h4 class="font-title-md text-title-md text-on-surface">Kirim Tugas &lt; 1 Menit</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Foto lembar tugas langsung dari kamera atau pilih file galeri. Pemangkasan ukuran bekerja di latar belakang.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs mb-1 text-primary">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+<h4 class="font-title-md text-title-md text-on-surface">Rekap Nilai Transparan</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Daftar tugas yang sudah dikoreksi menyajikan umpan balik detail, catatan perbaikan, serta riwayat skor.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs mb-1 text-primary">
+<span class="material-symbols-outlined text-[20px]">signal_cellular_connected_no_internet_4_bar</span>
+<h4 class="font-title-md text-title-md text-on-surface">Mode Hemat Kuota &amp; Offline Draft</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Jika sinyal operator drop di pedesaan, draf teks jawaban tetap tersimpan aman di peramban lokal ponsel.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs mb-1 text-primary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+<h4 class="font-title-md text-title-md text-on-surface">Tanpa Registrasi Rumit</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cukup masuk menggunakan Nomor Induk Siswa (NIS) yang telah didaftarkan pihak sekolah. Tidak perlu verifikasi email.</p>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-high/40 rounded-xl p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Ringan di Android &amp; iOS</span>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1" href="#">
+              Panduan PWA <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- ROLE GURU & ADMIN -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg shadow-sm flex flex-col justify-between" id="konsol-guru">
+<div>
+<div class="flex items-center gap-space-xs mb-space-md">
+<div class="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[22px]">laptop_mac</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Untuk Guru &amp; Wali Kelas</h3>
+<p class="font-label-md text-label-md text-secondary">Konsol desktop optimal untuk koreksi cepat massal</p>
+</div>
+</div>
+<div class="space-y-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs mb-1 text-secondary">
+<span class="material-symbols-outlined text-[20px]">splitscreen</span>
+<h4 class="font-title-md text-title-md text-on-surface">Penilaian Split-View Cepat</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tinjau lembar foto siswa di sisi kiri, berikan rubrik dan ketik skor 0-100 di sisi kanan tanpa gonta-ganti tab jendela.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs mb-1 text-secondary">
+<span class="material-symbols-outlined text-[20px]">table_chart</span>
+<h4 class="font-title-md text-title-md text-on-surface">Rekap Nilai Otomatis ke Excel</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Filter rekap per kelas dan semester, lalu unduh format CSV atau Excel yang siap disinkronkan ke e-Rapor resmi.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs mb-1 text-secondary">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+<h4 class="font-title-md text-title-md text-on-surface">Manajemen Rombel &amp; Mutasi</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Import data siswa per rombongan belajar (Rombel) sekali klik, atur naik kelas, serta mutasi antar rombel dengan rapi.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs mb-1 text-secondary">
+<span class="material-symbols-outlined text-[20px]">publish</span>
+<h4 class="font-title-md text-title-md text-on-surface">Draf &amp; Publikasi Terkontrol</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Nilai tersimpan sebagai draf privat guru terlebih dahulu, dan hanya terlihat oleh siswa setelah guru menekan tombol publikasi resmi.</p>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-high/40 rounded-xl p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">security</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Otorisasi Berjenjang Admin/Guru</span>
+</div>
+<a class="font-label-md text-label-md text-secondary hover:underline flex items-center gap-1" href="#">
+              Panduan Guru <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ARSITEKTUR & TEKNOLOGI CERDAS (RPD 7 & 14) -->
+<section class="py-space-xl px-margin-mobile md:px-margin bg-surface-container">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="px-space-md py-1 rounded-full bg-surface-container-highest text-primary font-label-md text-label-md">RPD Bagian 7 • Arsitektur Tanpa Server Bulanan</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-space-xs">
+          Tri-Faktor Infrastruktur Hemat &amp; Andal
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+          Bagaimana TugasMurid dapat melayani ratusan murid dengan biaya server Rp 0 melalui kombinasi GitHub Pages, Cloudflare Edge, dan Git-Ops Database.
+        </p>
+</div>
+<!-- Diagram Flow Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+<!-- Layer 1: Frontend -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[26px]">devices</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Komponen 1</span>
+<h3 class="font-title-lg text-title-lg text-on-surface mt-1 mb-2">Frontend Statis (GitHub Pages)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Aplikasi berbasis HTML/Tailwind/Vanilla JS statis murni yang dimuat dalam &lt;1 detik dari cache CDN global. Sangat ramah kuota bahkan di koneksi EDGE/3G ponsel murid.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-2.5">
+<div class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">speed</span> Kecepatan Muat: ~200ms
+            </div>
+</div>
+</div>
+<!-- Layer 2: API Gateway -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-[26px]">bolt</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Komponen 2</span>
+<h3 class="font-title-lg text-title-lg text-on-surface mt-1 mb-2">Perantara Cerdas (Cloudflare Workers)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Worker micro-API tanpa server (Serverless) yang bertugas memvalidasi password guru/admin, memfilter izin unggah, dan mengamankan GitHub Personal Access Token agar tidak bocor ke klien.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-2.5">
+<div class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">security</span> Enkripsi Token &amp; Rate-Limiting
+            </div>
+</div>
+</div>
+<!-- Layer 3: Git Database -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined text-[26px]">folder_special</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">Komponen 3</span>
+<h3 class="font-title-lg text-title-lg text-on-surface mt-1 mb-2">Database Git Privat (GitHub Repo)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Setiap tugas tersimpan sebagai commit JSON terstruktur dan lampiran WebP di repositori privat sekolah. Lengkap dengan riwayat log audit (versi), rollback instan, dan bebas biaya basis data bulanan.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-2.5">
+<div class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">history</span> Pencatatan Versi Audit Otomatis
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PANDUAN ALUR SINGKAT (HOW IT WORKS - RPD 10) -->
+<section class="py-space-xl px-margin-mobile md:px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="px-space-md py-1 rounded-full bg-surface-container text-primary font-label-md text-label-md">RPD Bagian 10 • Alur Kerja Sederhana</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-space-xs">
+          4 Langkah Mudah Mengoperasikan TugasMurid
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+          Dari pembuatan kelas oleh koordinator hingga rekap nilai semester selesai diekspor.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<!-- Step 1 -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-headline-md text-headline-md flex items-center justify-center mb-space-md">
+              1
+            </div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Setup &amp; Impor NIS</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Wali kelas / Admin mengunggah daftar nomor induk siswa serta rombel melalui dashboard guru.
+            </p>
+</div>
+<div class="mt-space-md font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">upload_file</span> Impor CSV Rombel
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-headline-md text-headline-md flex items-center justify-center mb-space-md">
+              2
+            </div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Buat Topik Tugas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Guru mata pelajaran menentukan judul tugas, instruksi, tenggat waktu (deadline), dan batas foto lampiran.
+            </p>
+</div>
+<div class="mt-space-md font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add_task</span> Deadline &amp; Panduan
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-headline-md text-headline-md flex items-center justify-center mb-space-md">
+              3
+            </div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Murid Kirim Foto</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Siswa membuka link PWA, memotret lembar jawaban. Sistem otomatis mengompresi gambar dan mengirim ke cloud.
+            </p>
+</div>
+<div class="mt-space-md font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span> Auto-Kompres WebP
+          </div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-headline-md text-headline-md flex items-center justify-center mb-space-md">
+              4
+            </div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Koreksi &amp; Ekspor</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Guru memeriksa kiriman via split-view, memberi skor &amp; saran, lalu mengekspor rekap nilai saat siap.
+            </p>
+</div>
+<div class="mt-space-md font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">download_done</span> Cetak Nilai &amp; Excel
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ SINGKAT (RPD v1.4) -->
+<section class="py-space-xl px-margin-mobile md:px-margin bg-surface-container-low">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-space-xl">
+<span class="px-space-md py-1 rounded-full bg-surface-container-highest text-primary font-label-md text-label-md">Pertanyaan Umum</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-space-xs">
+          Tanya Jawab Seputar TugasMurid
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+          Informasi praktis seputar kuota, data privasi, dan kelancaran belajar mengajar.
+        </p>
+</div>
+<div class="space-y-space-sm" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center font-title-lg text-title-lg text-on-surface list-none">
+<span>Apakah siswa membutuhkan kuota besar untuk mengirim foto tugas?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-space-sm font-body-md text-body-md text-on-surface-variant pt-space-xs">
+              Sama sekali tidak. Sesuai spesifikasi RPD 7.4, mesin browser siswa secara otomatis mengonversi dan mengompresi foto beresolusi tinggi ke format WebP ringan (~300–500 KB per lembar) sebelum paket data dikirim ke server. Satu foto tugas hanya memakan kuota setara satu pesan stiker aplikasi chat.
+            </div>
+</details>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center font-title-lg text-title-lg text-on-surface list-none">
+<span>Bagaimana jika murid lupa kata sandi atau salah memasukkan NIS?</span>
+<summary-icon class="hidden"></summary-icon>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-space-sm font-body-md text-body-md text-on-surface-variant pt-space-xs">
+              Platform tidak membebani siswa dengan prosedur pemulihan email yang rumit. Jika ada murid yang mengalami kendala login, wali kelas dapat mereset PIN atau memeriksa validitas NIS dalam 5 detik langsung dari Konsol Manajemen Kelas.
+            </div>
+</details>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center font-title-lg text-title-lg text-on-surface list-none">
+<span>Apakah data foto tugas dan nilai siswa aman dari publik?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-space-sm font-body-md text-body-md text-on-surface-variant pt-space-xs">
+              Sangat aman. Seluruh data nilai dan foto tugas tersimpan dalam repositori privat yang terenkripsi dan terisolasi. Jalur pengiriman diverifikasi melalui Cloudflare Workers Edge Gateway yang mengamankan kredensial serverless sekolah, sehingga orang asing tidak dapat mengakses arsip kelas.
+            </div>
+</details>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center font-title-lg text-title-lg text-on-surface list-none">
+<span>Bisakah sekolah saya mengadopsi TugasMurid secara gratis?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-space-sm font-body-md text-body-md text-on-surface-variant pt-space-xs">
+              Ya, arsitektur RPD v1.4 dirancang khusus untuk memanfaatkan kuota gratis infrastruktur GitHub Pages dan Cloudflare Workers Free Tier. Sekolah dapat melayani kebutuhan belajar mandiri hingga ±500 siswa aktif tanpa tagihan VPS bulanan.
+            </div>
+</details>
+</div>
+</div>
+</div>
+</section>
+<!-- BOTTOM BANNER CTA -->
+<section class="py-space-xl px-margin-mobile md:px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="bg-primary rounded-3xl p-space-lg md:p-space-xl text-on-primary shadow-xl relative overflow-hidden flex flex-col items-center text-center">
+<!-- Ambient circle inside CTA -->
+<div class="absolute -bottom-24 -right-24 w-80 h-80 bg-primary-container rounded-full blur-2xl pointer-events-none opacity-50"></div>
+<div class="absolute -top-24 -left-24 w-80 h-80 bg-primary-fixed-dim/20 rounded-full blur-2xl pointer-events-none"></div>
+<span class="px-space-md py-1 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md mb-space-md">
+          Mulai Pengalaman Belajar Baru
+        </span>
+<h2 class="max-w-3xl font-headline-xl text-headline-xl tracking-tight mb-space-sm text-on-primary">
+          Siap Menyederhanakan Pengumpulan Tugas di Kelas Anda?
+        </h2>
+<p class="max-w-xl font-body-lg text-body-lg text-on-primary-container mb-space-lg">
+          Bebaskan guru dari kekacauan obrolan grup WhatsApp dan berikan pengalaman pengumpulan tugas yang nyaman bagi murid.
+        </p>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm w-full sm:w-auto z-10">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-xl bg-surface-container-lowest text-primary font-title-md text-title-md shadow-md hover:bg-surface transition-all" href="#portal-murid">
+<span class="material-symbols-outlined text-[20px]">person</span>
+<span>Masuk Siswa (PWA)</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-xl bg-primary-container text-on-primary font-title-md text-title-md hover:bg-tertiary-container transition-all" href="#konsol-guru">
+<span class="material-symbols-outlined text-[20px]">admin_panel_settings</span>
+<span>Masuk Konsol Guru</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin py-space-xl flex flex-col gap-space-lg"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter"><div class="space-y-space-xs md:col-span-2"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[22px]">local_library</span><span class="font-title-lg text-title-lg text-primary">TugasMurid</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Sistem manajemen penugasan akademik yang dirancang seringan kertas, hemat kuota data, dan bebas hambatan koneksi bagi siswa dan pengajar di seluruh nusantara.</p><div class="flex items-center gap-space-xs mt-space-sm"><span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[14px] text-primary">bolt</span> Cloudflare Edge</span><span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[14px] text-tertiary">cloud_done</span> GitHub Pages Host</span></div></div><div class="space-y-space-xs"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Navigasi Cepat</span><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="tentang" href="#">Tentang Platform</a></li><li><a class="hover:text-primary transition-colors" data-path="fitur-murid" href="#">Panduan Siswa</a></li><li><a class="hover:text-primary transition-colors" data-path="fitur-guru" href="#">Ruang Kerja Guru</a></li><li><a class="hover:text-primary transition-colors" data-path="arsitektur-hemat-kuota" href="#">Standar Hemat Kuota</a></li></ul></div><div class="space-y-space-xs"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Spesifikasi Sistem</span><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Engine Build: <span class="font-title-md text-title-md text-primary">RPD v1.4</span><br/>Distribusi: Cloudflare Global CDN<br/>Infrastruktur: Static Git-Ops Sync</p></div></div><div class="pt-space-md bg-surface-container-high/40 rounded-xl p-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><div>© 2025 TugasMurid Ecosystem. RPD v1.4 Engine by Cloudflare &amp; GitHub Pages. Hak cipta dilindungi.</div><div class="flex items-center gap-space-md"><a class="hover:text-primary transition-colors" data-path="faq" href="#">FAQ</a><a class="hover:text-primary transition-colors" data-path="kebijakan-privasi" href="#">Kebijakan Privasi</a><a class="hover:text-primary transition-colors" data-path="status-sistem" href="#">Status Server</a></div></div></div></footer></body></html>
